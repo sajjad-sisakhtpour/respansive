@@ -66,3 +66,35 @@ main{
 main section{
     overflow: hidden;
 }
+
+/* media query */
+
+
+@media screen and (max-width: 900px){
+    main{
+        grid-template-columns: 2fr 4fr;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    .container{
+        font-size: 1.3em;
+    }
+    .menu{
+        display: none;
+    }
+    main{
+        grid-template-columns:1fr;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
